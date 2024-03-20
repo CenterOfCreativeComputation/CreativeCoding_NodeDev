@@ -27,7 +27,7 @@ VS Code, Git, Node, Bash type Terminal
 1. create new file in nodeDev named tsconfig.json
 2. create new file in nodeDev named webpack.config.js
 
-Add this to the tsconfig.json file:
+**Add this to the tsconfig.json file:**
 
 {  
 "compilerOptions": {  
@@ -44,8 +44,8 @@ Add this to the tsconfig.json file:
 }  
   
 
-Add this to the webpack.config.js file:
-
+**Add this to the webpack.config.js file:
+**
 const path = require("path");
 module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
@@ -73,10 +73,11 @@ module.exports = {
     }
   };
 
-cd into the dist directory
+**cd into the dist directory**
 create index.html file.
-Add the following to index.html:
-`<!DOCTYPE html>
+
+**Add the following to index.html:**
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -92,12 +93,14 @@ Add the following to index.html:
     <script type="module" src="./bundle.js"></script>
     
 </body>
-</html>`
+</html>
 
-cd to src/p5/Prog01 directory
+**cd to src/p5/Prog01 directory**
 create sketch.ts file
-Add the following to sketch.ts
-`import p5 from "p5"
+**Add the following to sketch.ts**
+
+`//begin
+import p5 from "p5"
 /*
  * P5 Sketch
  */
@@ -119,7 +122,9 @@ const sketch = (p: p5) => {
     };
 };
 
-export default new p5(sketch);`
+export default new p5(sketch);
+// end`
+
 
 cd to src/three/Prog01 directory
 create sketch.ts file
