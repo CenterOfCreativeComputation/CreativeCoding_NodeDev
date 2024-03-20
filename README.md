@@ -47,9 +47,9 @@ VS Code, Git, Node, Bash type Terminal
 **Add this to the webpack.config.js file:
 **
 
-const path = require("path");
-module.exports = {
-    entry: "./src/p5/Proj01/sketch.ts",
+const path = require("path");\
+module.exports = {\
+    entry: "./src/p5/Proj01/sketch.ts",\
 
     module: {
         rules: [
