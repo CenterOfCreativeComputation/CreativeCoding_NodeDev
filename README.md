@@ -28,21 +28,21 @@ VS Code, Git, Node, Bash type Terminal
 2. create new file in nodeDev named webpack.config.js
 
 Add this to the tsconfig.json file:
-`
-{  <br />
-"compilerOptions": {  <br />
-"allowJs": true,  <br />
-"module": "commonjs",  <br />
-"noImplicitAny": true,  <br />
-"esModuleInterop": true,  <br />
-"pretty": true, <br /> 
-"outDir": "dist",  <br />
-"sourceMap": true,  <br />
-"strict": true,  <br />
-"target": "es6"  <br />
-  }  <br />
-}  <br />
-`  
+
+{  
+"compilerOptions": {  
+"allowJs": true,  
+"module": "commonjs",  
+"noImplicitAny": true,  
+"esModuleInterop": true,  
+"pretty": true, 
+"outDir": "dist",  
+"sourceMap": true,  
+"strict": true,  
+"target": "es6"  
+  }  
+}  
+  
 
 Add this to the webpack.config.js file:
 `const path = require("path");
