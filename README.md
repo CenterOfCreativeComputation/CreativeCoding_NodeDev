@@ -29,20 +29,20 @@ VS Code, Git, Node, Bash type Terminal
 
 Add this to the tsconfig.json file:
 `
-{
-"compilerOptions": {
-"allowJs": true,
-"module": "commonjs",
-"noImplicitAny": true,
-"esModuleInterop": true,
-"pretty": true,
-"outDir": "dist",
-"sourceMap": true,
-"strict": true,
-"target": "es6"
-  }
-}
-`
+{  
+"compilerOptions": {  
+"allowJs": true,  
+"module": "commonjs",  
+"noImplicitAny": true,  
+"esModuleInterop": true,  
+"pretty": true,  
+"outDir": "dist",  
+"sourceMap": true,  
+"strict": true,  
+"target": "es6"  
+  }  
+}  
+`  
 
 Add this to the webpack.config.js file:
 `const path = require("path");
