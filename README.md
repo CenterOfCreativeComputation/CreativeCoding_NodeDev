@@ -46,6 +46,7 @@ Add this to the tsconfig.json file:
 
 Add this to the webpack.config.js file:
 
+`  
 const path = require("path");
 module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
@@ -72,7 +73,7 @@ module.exports = {
         port: 8080
     }
   };
-`
+    `
 
 cd into the dist directory
 create index.html file.
