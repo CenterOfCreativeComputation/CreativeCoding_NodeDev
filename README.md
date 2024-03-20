@@ -46,6 +46,7 @@ VS Code, Git, Node, Bash type Terminal
 
 **Add this to the webpack.config.js file:
 **
+
 const path = require("path");
 module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
@@ -99,7 +100,6 @@ create index.html file.
 create sketch.ts file
 **Add the following to sketch.ts**
 
-`//begin
 import p5 from "p5"
 /*
  * P5 Sketch
@@ -109,7 +109,7 @@ const sketch = (p: p5) => {
      * P5 Setup
      */
     p.setup = () => {
-        document.title = "Proj01 | MACT.2024";
+        document.title = "Proj01 | CreativeCoding_NodeDev.2024";
         p.createCanvas(p.windowWidth, p.windowHeight);
         p.background(p.color('#080808'));
     };
@@ -123,12 +123,11 @@ const sketch = (p: p5) => {
 };
 
 export default new p5(sketch);
-// end`
-
 
 cd to src/three/Prog01 directory
 create sketch.ts file
-Add the following to sketch.ts
+
+**Add the following to sketch.ts**
 // three example code from: https://github.com/Sean-Bradley/Three.js-TypeScript-Boilerplate
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -182,7 +181,7 @@ Add these lines to the "scripts" in the package.json file:
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
     
-Finally to run, type in the terminal: npm run dev
+Finally to run, type in the terminal: `npm run dev`
     
     
 
