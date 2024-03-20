@@ -44,7 +44,6 @@ Add this to the tsconfig.json file:
 
 Add this to the webpack.config.js file:
 `const path = require("path");
-
 module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
 
