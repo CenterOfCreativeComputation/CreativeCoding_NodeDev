@@ -47,7 +47,7 @@ VS Code, Git, Node, Bash type Terminal
 **Add this to the webpack.config.js file:
 **
 
-`const path = require("path");\
+const path = require("path");\
 module.exports = {\
     entry: "./src/p5/Proj01/sketch.ts",
 
@@ -72,18 +72,18 @@ module.exports = {\
         compress: true,
         port: 8080
     }
-  };```
+  };
 
 **cd into the dist directory**
 create index.html file.
 
 **Add the following to index.html:**
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!DOCTYPE html>/
+<html lang="en">/
+<head>/
+    <meta charset="UTF-8">/
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">/
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">/
     
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
