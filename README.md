@@ -1,30 +1,34 @@
 **Requirements:**
 VS Code, Git, Node, Bash type Terminal
 
-**Steps:**
+**Steps, create directory structures:**
 1. Install Node
 2. Open your terminal program and navigate to where you want to develop your Node based creative coding projects,
 3. Type: mkdir nodeDev (or name you want to use for your Node based dev work)
 4. Type: `cd nodeDev`
 5. Type: `npm init -y`
-6. `mkdir src dist
-7. `cd src
+6. `mkdir src dist`
+7. `cd src`
 8. `mkdir p5 three`
-9. `cd p5
+9. `cd p5`
 10. `mkdir Proj01`
 11. `cd ../three`
 12. `mkdir Proj01`
 
-npm i typescript p5 three
-npm i @types/p5
-npm i @types/three
-npm i webpack webpack-cli ts-loader webpack-dev-server
+**install js modules and TypeScript type definitions**
+`npm i typescript p5 three`
+`npm i @types/p5`
+`npm i @types/three`
 
+**install webpack and utilities**
+`npm i webpack webpack-cli ts-loader webpack-dev-server`
+
+**create config files**
 create new file in nodeDev named tsconfig.json
-create new file in nodeDev named webpack.config.json
+create new file in nodeDev named webpack.config.js
 
 Add this to the tsconfig.json file:
-{
+`{
   "compilerOptions": {
     "allowJs": true,
     "module": "commonjs",
@@ -36,10 +40,10 @@ Add this to the tsconfig.json file:
     "strict": true,
     "target": "es6"
   }
-}
+}`
 
 Add this to the webpack.config.js file:
-const path = require("path");
+`const path = require("path");
 
 module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
@@ -65,12 +69,12 @@ module.exports = {
         compress: true,
         port: 8080
     }
-};
+};`
 
 cd into the dist directory
 create index.html file.
 Add the following to index.html:
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -86,12 +90,12 @@ Add the following to index.html:
     <script type="module" src="./bundle.js"></script>
     
 </body>
-</html>
+</html>`
 
 cd to src/p5/Prog01 directory
 create sketch.ts file
 Add the following to sketch.ts
-import p5 from "p5"
+`import p5 from "p5"
 /*
  * P5 Sketch
  */
@@ -113,7 +117,7 @@ const sketch = (p: p5) => {
     };
 };
 
-export default new p5(sketch);
+export default new p5(sketch);`
 
 cd to src/three/Prog01 directory
 create sketch.ts file
