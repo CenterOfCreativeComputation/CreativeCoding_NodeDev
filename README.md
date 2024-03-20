@@ -49,7 +49,7 @@ VS Code, Git, Node, Bash type Terminal
 
 const path = require("path");\
 module.exports = {\
-    entry: "./src/p5/Proj01/sketch.ts",\
+    entry: "./src/p5/Proj01/sketch.ts",
 
     module: {
         rules: [
