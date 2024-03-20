@@ -4,7 +4,7 @@ VS Code, Git, Node, Bash type Terminal
 **Steps, create directory structures:**
 1. Install Node
 2. Open your terminal program and navigate to where you want to develop your Node based creative coding projects,
-3. Type: mkdir nodeDev (or name you want to use for your Node based dev work)
+3. Type: `mkdir CreativeCoding_NodeDev` (or name you want to use for your Node based dev work)
 4. Type: `cd nodeDev`
 5. Type: `npm init -y`
 6. `mkdir src dist`
@@ -16,16 +16,16 @@ VS Code, Git, Node, Bash type Terminal
 12. `mkdir Proj01`
 
 **install js modules and TypeScript type definitions**
-`npm i typescript p5 three`
-`npm i @types/p5`
-`npm i @types/three`
+1. `npm i typescript p5 three`
+2. `npm i @types/p5`
+3. `npm i @types/three`
 
 **install webpack and utilities**
 `npm i webpack webpack-cli ts-loader webpack-dev-server`
 
 **create config files**
-create new file in nodeDev named tsconfig.json
-create new file in nodeDev named webpack.config.js
+1. create new file in nodeDev named tsconfig.json
+2. create new file in nodeDev named webpack.config.js
 
 Add this to the tsconfig.json file:
 `{
@@ -40,11 +40,12 @@ Add this to the tsconfig.json file:
     "strict": true,
     "target": "es6"
   }
-}`
+}
+`
 
 Add this to the webpack.config.js file:
 `const path = require("path");
-module.exports = {
+ module.exports = {
     entry: "./src/p5/Proj01/sketch.ts",
 
     module: {
